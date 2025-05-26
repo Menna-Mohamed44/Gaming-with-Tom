@@ -45,7 +45,7 @@
   background-color: var(--bg-secondary);
   backdrop-filter: blur(10px);
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem; /* Increased radius */
   border: 1px solid var(--border-color);
   text-align: center;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -75,7 +75,7 @@
 
 .mission {
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(16, 185, 129, 0.1));
-  border-radius: 0.5rem;
+  border-radius: 1.5rem; /* Increased radius */
   padding: 3rem;
   text-align: center;
   border: 1px solid var(--border-color);
