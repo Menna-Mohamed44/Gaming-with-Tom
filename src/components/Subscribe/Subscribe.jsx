@@ -48,7 +48,7 @@ const Subscribe = () => {
   return (
     <div className={`${styles.subscribe} section`}>
       <div className={styles.container}>
-        <div className={styles.header}>
+        <div className={`${styles.header} title-animate`}>
           <h1 className={styles.title}>
             <span className={styles.gradientText}>Subscribe & Connect</span>
           </h1>
@@ -57,7 +57,7 @@ const Subscribe = () => {
           </p>
         </div>
 
-        <div className={styles.youtubeSection}>
+        <div className={`${styles.youtubeSection} animate-on-scroll`}>
           <div className={styles.youtubeIcon}>
             <svg viewBox="0 0 24 24" fill="currentColor" className={styles.youtubeSvg}>
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -95,10 +95,10 @@ const Subscribe = () => {
         </div>
 
         <div className={styles.socialSection}>
-          <h2 className={styles.socialTitle}>Connect With Me</h2>
+          <h2 className={`${styles.socialTitle} animate-on-scroll`}>Connect With Me</h2>
           <div className={styles.socialGrid}>
-            {socialLinks.map((social) => (
-              <div key={social.name} className={styles.socialCard}>
+            {socialLinks.map((social, index) => (
+              <div key={social.name} className={`${styles.socialCard} card-animate`}>
                 <div className={styles.socialInfo}>
                   <span className={`${styles.socialIcon} ${social.color}`}>{social.icon}</span>
                   <span className={styles.socialName}>{social.name}</span>
@@ -118,7 +118,7 @@ const Subscribe = () => {
 
         <div className={styles.contactSection}>
           <div className={styles.contactGrid}>
-            <div className={styles.contactCard}>
+            <div className={`${styles.contactCard} card-animate`}>
               <div className={styles.contactIcon}>
                 <svg viewBox="0 0 24 24" fill="currentColor" className={styles.contactSvg}>
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -129,7 +129,7 @@ const Subscribe = () => {
                 contact@gamingwithtom.com
               </a>
             </div>
-            <div className={styles.contactCard}>
+            <div className={`${styles.contactCard} card-animate`}>
               <div className={styles.contactIcon}>
                 <svg viewBox="0 0 24 24" fill="currentColor" className={styles.contactSvg}>
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
@@ -141,7 +141,7 @@ const Subscribe = () => {
           </div>
         </div>
 
-        <div className={styles.footer}>
+        <div className={`${styles.footer} animate-on-scroll`}>
           <p className={styles.copyright}>
             © {new Date().getFullYear()} Gaming with Tom. All rights reserved.
           </p>
