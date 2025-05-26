@@ -35,7 +35,7 @@ const Videos = () => {
   return (
     <div className={`${styles.videos} section`}>
       <div className={styles.container}>
-        <div className={styles.header}>
+        <div className={`${styles.header} title-animate`}>
           <h1 className={styles.title}>
             <span className={styles.gradientText}>Featured Videos</span>
           </h1>
@@ -43,17 +43,19 @@ const Videos = () => {
         </div>
 
         <div className={styles.featuredSection}>
-          <h2 className={styles.sectionTitle}>Featured Video</h2>
-          <div className={styles.featuredContainer}>
+          <h2 className={`${styles.sectionTitle} animate-on-scroll`}>Featured Video</h2>
+          <div className={`${styles.featuredContainer} animate-on-scroll`}>
             <VideoCard video={featuredVideo} featured />
           </div>
         </div>
 
         <div className={styles.favoritesSection}>
-          <h2 className={styles.sectionTitle}>My Other Favorite Videos</h2>
+          <h2 className={`${styles.sectionTitle} animate-on-scroll`}>My Other Favorite Videos</h2>
           <div className={styles.videosGrid}>
-            {favoriteVideos.map((video) => (
-              <VideoCard key={video.id} video={video} />
+            {favoriteVideos.map((video, index) => (
+              <div key={video.id} className="card-animate">
+                <VideoCard video={video} />
+              </div>
             ))}
           </div>
         </div>
