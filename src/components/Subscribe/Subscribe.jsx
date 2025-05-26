@@ -141,7 +141,7 @@ const Subscribe = () => {
           </div>
         </div>
 
-        <div className={`${styles.footer} animate-on-scroll`}>
+        <div className={styles.footer}>
           <p className={styles.copyright}>
             © {new Date().getFullYear()} Gaming with Tom. All rights reserved.
           </p>
