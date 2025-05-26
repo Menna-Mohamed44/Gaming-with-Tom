@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div className={`${styles.about} section`}>
       <div className={styles.container}>
-        <div className={styles.header}>
+        <div className={`${styles.header} title-animate`}>
           <h1 className={styles.title}>
             About <span className={styles.gradientText}>Gaming with Tom</span>
           </h1>
@@ -40,7 +40,7 @@ const About = () => {
 
         <div className={styles.features}>
           {features.map((feature, index) => (
-            <div key={index} className={styles.featureCard}>
+            <div key={index} className={`${styles.featureCard} card-animate`}>
               <div className={styles.featureIcon}>{feature.icon}</div>
               <h3 className={styles.featureTitle}>{feature.title}</h3>
               <p className={styles.featureDescription}>{feature.description}</p>
@@ -48,7 +48,7 @@ const About = () => {
           ))}
         </div>
 
-        <div className={styles.mission}>
+        <div className={`${styles.mission} animate-on-scroll`}>
           <h2 className={styles.missionTitle}>The Mission</h2>
           <p className={styles.missionText}>
             Gaming with Tom exists to bring you the most authentic horror gaming experience possible. Whether you're a
