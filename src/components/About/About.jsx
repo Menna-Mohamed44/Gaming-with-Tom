@@ -1,25 +1,26 @@
 import React from 'react'
+import { Skull, Gamepad2, Users, Video } from 'lucide-react'
 import styles from './About.module.css'
 
 const About = () => {
   const features = [
     {
-      icon: '💀',
+      icon: <Skull className={styles.featureIconSvg} />,
       title: 'Horror Gaming Expert',
       description: 'With years of experience in horror gaming, Tom brings you the most terrifying and thrilling gameplay experiences. From indie horror gems to AAA nightmare fuel, no game is too scary to tackle.'
     },
     {
-      icon: '🎮',
+      icon: <Gamepad2 className={styles.featureIconSvg} />,
       title: 'Authentic Reactions',
       description: 'What sets Gaming with Tom apart is the genuine, unfiltered reactions to the most spine-chilling moments. Every scream, every jump, every moment of terror is real and unscripted.'
     },
     {
-      icon: '👥',
+      icon: <Users className={styles.featureIconSvg} />,
       title: 'Community Focused',
       description: 'Gaming with Tom isn\'t just a channel—it\'s a community of horror game enthusiasts. Join the Awesome Squad Discord server to connect with fellow fans and get exclusive content.'
     },
     {
-      icon: '📹',
+      icon: <Video className={styles.featureIconSvg} />,
       title: 'Regular Content',
       description: 'New horror gaming content uploaded regularly, featuring the latest releases, hidden gems, and classic horror games that will keep you on the edge of your seat.'
     }
