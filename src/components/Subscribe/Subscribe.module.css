@@ -1,0 +1,322 @@
+.subscribe {
+  min-height: 100vh;
+  padding: 5rem 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, var(--horror-purple), var(--horror-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.youtubeSection {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(185, 28, 28, 0.1));
+  border-radius: 0.5rem;
+  padding: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  border: 1px solid var(--border-color);
+}
+
+.youtubeIcon {
+  margin-bottom: 1rem;
+}
+
+.youtubeSvg {
+  width: 4rem;
+  height: 4rem;
+  color: #dc2626;
+}
+
+.youtubeTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.youtubeText {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.youtubeButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.subscribeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #dc2626;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.subscribeButton:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px);
+}
+
+.notificationButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border: 2px solid #dc2626;
+  color: #dc2626;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.notificationButton:hover {
+  background-color: #dc2626;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.buttonIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.socialSection {
+  margin-bottom: 4rem;
+}
+
+.socialTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.socialGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.socialCard {
+  background-color: var(--bg-secondary);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.socialCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--horror-purple);
+}
+
+.socialInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialIcon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.youtube {
+  color: #dc2626;
+}
+
+.instagram {
+  color: #e1306c;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.tiktok {
+  color: #000000;
+}
+
+body.light .tiktok {
+  color: #000000;
+}
+
+.socialName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.followButton {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.followButton:hover {
+  border-color: var(--horror-purple);
+  color: var(--horror-purple);
+}
+
+.contactSection {
+  margin-bottom: 4rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contactCard {
+  background-color: var(--bg-secondary);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contactCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--horror-purple);
+}
+
+.contactIcon {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contactSvg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--horror-purple);
+}
+
+.contactTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.contactLink {
+  color: var(--horror-purple);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: var(--horror-green);
+}
+
+.contactText {
+  color: var(--text-secondary);
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.copyright {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.madeWith {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.heart {
+  color: #dc2626;
+}
+
+@media (min-width: 768px) {
+  .youtubeButtons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .socialGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,8 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.main {
+  padding-top: 80px; /* Account for fixed navigation */
+}

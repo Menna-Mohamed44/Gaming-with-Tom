@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --horror-purple: #8b5cf6;
+  --horror-green: #10b981;
+  --dark-bg: #0f0f0f;
+  --dark-card: #1a1a1a;
+  --dark-text: #ffffff;
+  --dark-text-muted: #a1a1aa;
+  --light-bg: #ffffff;
+  --light-card: #f8fafc;
+  --light-text: #0f172a;
+  --light-text-muted: #64748b;
+  --border-dark: #374151;
+  --border-light: #e2e8f0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme (default) */
+body {
+  --bg-primary: var(--dark-bg);
+  --bg-secondary: var(--dark-card);
+  --text-primary: var(--dark-text);
+  --text-secondary: var(--dark-text-muted);
+  --border-color: var(--border-dark);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Light theme */
+body.light {
+  --bg-primary: var(--light-bg);
+  --bg-secondary: var(--light-card);
+  --text-primary: var(--light-text);
+  --text-secondary: var(--light-text-muted);
+  --border-color: var(--border-light);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.horror-gradient {
+  background: linear-gradient(135deg, var(--horror-purple), var(--horror-green));
+}
+
+.horror-text-gradient {
+  background: linear-gradient(135deg, var(--horror-purple), var(--horror-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.horror-font {
+  font-family: 'Creepster', cursive;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+.section {
+  padding: 5rem 0;
+}
