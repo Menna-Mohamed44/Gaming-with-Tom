@@ -1,25 +1,26 @@
 import React from 'react'
+import { MessageCircle, Zap, Crown, Users } from 'lucide-react'
 import styles from './Discord.module.css'
 
 const Discord = () => {
   const features = [
     {
-      icon: '💬',
+      icon: <MessageCircle className={styles.featureIconSvg} />,
       title: 'Discuss Latest Releases',
       description: 'Stay up-to-date with the newest horror games and share your thoughts with fellow enthusiasts.'
     },
     {
-      icon: '⚡',
+      icon: <Zap className={styles.featureIconSvg} />,
       title: 'Share Gameplay Tips',
       description: 'Exchange strategies, secrets, and survival tips for the most challenging horror games.'
     },
     {
-      icon: '👑',
+      icon: <Crown className={styles.featureIconSvg} />,
       title: 'Exclusive Content',
       description: 'Get exclusive access to behind-the-scenes content and be the first to know about upcoming streams.'
     },
     {
-      icon: '👥',
+      icon: <Users className={styles.featureIconSvg} />,
       title: 'Connect with Gamers',
       description: 'Build friendships with like-minded horror gaming enthusiasts from around the world.'
     }
@@ -42,7 +43,8 @@ const Discord = () => {
             rel="noopener noreferrer"
             className={`${styles.joinButton} animate-on-scroll`}
           >
-            👥 Join Discord Server
+            <Users className={styles.buttonIcon} />
+            Join Discord Server
           </a>
         </div>
 
@@ -68,7 +70,8 @@ const Discord = () => {
             rel="noopener noreferrer"
             className={styles.ctaButton}
           >
-            👥 Join Now - It's Free!
+            <Users className={styles.buttonIcon} />
+            Join Now - It's Free!
           </a>
         </div>
       </div>
