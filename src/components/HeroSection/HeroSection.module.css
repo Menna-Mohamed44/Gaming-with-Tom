@@ -67,12 +67,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  border-radius: 1.5rem; /* Increased radius */
+  border-radius: 1.5rem;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
   min-width: 150px;
+}
+
+.buttonIcon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .primaryButton {
@@ -140,7 +146,7 @@
   background-color: var(--bg-secondary);
   backdrop-filter: blur(10px);
   padding: 2rem;
-  border-radius: 1rem; /* Increased radius */
+  border-radius: 1rem;
   border: 1px solid var(--border-color);
 }
 
