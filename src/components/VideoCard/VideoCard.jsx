@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Play } from 'lucide-react'
 import styles from './VideoCard.module.css'
 
 const VideoCard = ({ video, featured = false }) => {
@@ -34,7 +35,7 @@ const VideoCard = ({ video, featured = false }) => {
         />
         <div className={styles.overlay}></div>
         <button className={styles.playButton} onClick={handlePlay}>
-          <span className={styles.playIcon}>▶️</span>
+          <Play className={styles.playIcon} />
         </button>
       </div>
       <div className={styles.videoInfo}>
