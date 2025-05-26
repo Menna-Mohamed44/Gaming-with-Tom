@@ -28,7 +28,7 @@ const Discord = () => {
   return (
     <div className={`${styles.discord} section`}>
       <div className={styles.container}>
-        <div className={styles.header}>
+        <div className={`${styles.header} title-animate`}>
           <h1 className={styles.title}>
             Join the <span className={styles.gradientText}>Awesome Squad</span>
           </h1>
@@ -40,7 +40,7 @@ const Discord = () => {
             href="https://discord.com/invite/BvynsM4qjN"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.joinButton}
+            className={`${styles.joinButton} animate-on-scroll`}
           >
             👥 Join Discord Server
           </a>
@@ -48,7 +48,7 @@ const Discord = () => {
 
         <div className={styles.features}>
           {features.map((feature, index) => (
-            <div key={index} className={styles.featureCard}>
+            <div key={index} className={`${styles.featureCard} card-animate`}>
               <div className={styles.featureIcon}>{feature.icon}</div>
               <h3 className={styles.featureTitle}>{feature.title}</h3>
               <p className={styles.featureDescription}>{feature.description}</p>
@@ -56,7 +56,7 @@ const Discord = () => {
           ))}
         </div>
 
-        <div className={styles.callToAction}>
+        <div className={`${styles.callToAction} animate-on-scroll`}>
           <h2 className={styles.ctaTitle}>Ready to Join the Squad?</h2>
           <p className={styles.ctaText}>
             Don't miss out on exclusive content, early access to videos, and the chance to be part of an amazing horror
