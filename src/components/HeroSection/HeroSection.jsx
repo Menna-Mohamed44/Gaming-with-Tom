@@ -59,16 +59,16 @@ const HeroSection = () => {
 
         <div className={styles.stats}>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>1000+</div>
+            <div className={styles.statNumber}>200+</div>
             <div className={styles.statLabel}>Horror Games Played</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>50K+</div>
+            <div className={styles.statNumber}>1K+</div>
             <div className={styles.statLabel}>Subscribers</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>24/7</div>
-            <div className={styles.statLabel}>Nightmare Fuel</div>
+            <div className={styles.statNumber}>Frequent</div>
+            <div className={styles.statLabel}>Uploads</div>
           </div>
         </div>
       </div>
