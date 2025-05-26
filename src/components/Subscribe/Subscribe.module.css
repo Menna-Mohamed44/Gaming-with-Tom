@@ -36,7 +36,7 @@
 
 .youtubeSection {
   background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(185, 28, 28, 0.1));
-  border-radius: 0.5rem;
+  border-radius: 1.5rem; /* Increased radius */
   padding: 3rem;
   text-align: center;
   margin-bottom: 4rem;
@@ -85,7 +85,7 @@
   background-color: #dc2626;
   color: white;
   text-decoration: none;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem; /* Increased radius */
   font-weight: 600;
   font-size: 1.125rem;
   transition: all 0.3s ease;
@@ -107,7 +107,7 @@
   color: #dc2626;
   background-color: transparent;
   text-decoration: none;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem; /* Increased radius */
   font-weight: 600;
   font-size: 1.125rem;
   transition: all 0.3s ease;
@@ -147,7 +147,7 @@
   background-color: var(--bg-secondary);
   backdrop-filter: blur(10px);
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem; /* Increased radius */
   border: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
@@ -211,7 +211,7 @@ body.light .tiktok {
   color: var(--text-primary);
   background-color: transparent;
   text-decoration: none;
-  border-radius: 0.375rem;
+  border-radius: 1.5rem; /* Increased radius */
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -235,7 +235,7 @@ body.light .tiktok {
   background-color: var(--bg-secondary);
   backdrop-filter: blur(10px);
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem; /* Increased radius */
   border: 1px solid var(--border-color);
   text-align: center;
   transition: transform 0.3s ease, border-color 0.3s ease;
