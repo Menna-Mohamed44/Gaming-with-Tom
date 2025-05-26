@@ -85,3 +85,47 @@ html {
 .section {
   padding: 5rem 0;
 }
+
+/* Scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger animation delays */
+.animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+.animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+.animate-on-scroll:nth-child(4) { transition-delay: 0.4s; }
+.animate-on-scroll:nth-child(5) { transition-delay: 0.5s; }
+.animate-on-scroll:nth-child(6) { transition-delay: 0.6s; }
+
+/* Card animations */
+.card-animate {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease-out;
+}
+
+.card-animate.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Title animations */
+.title-animate {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.7s ease-out;
+}
+
+.title-animate.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
