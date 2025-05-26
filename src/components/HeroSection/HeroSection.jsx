@@ -1,4 +1,5 @@
 import React from 'react'
+import { Play, Users } from 'lucide-react'
 import styles from './HeroSection.module.css'
 
 const HeroSection = () => {
@@ -22,7 +23,8 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
                 className={`${styles.button} ${styles.primaryButton}`}
               >
-                ▶️ Watch Now
+                <Play className={styles.buttonIcon} />
+                Watch Now
               </a>
               <a
                 href="#discord"
@@ -32,7 +34,8 @@ const HeroSection = () => {
                   document.querySelector('#discord').scrollIntoView({ behavior: 'smooth' })
                 }}
               >
-                👥 Join Discord
+                <Users className={styles.buttonIcon} />
+                Join Discord
               </a>
             </div>
           </div>
@@ -56,16 +59,16 @@ const HeroSection = () => {
 
         <div className={styles.stats}>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>200+</div>
+            <div className={styles.statNumber}>1000+</div>
             <div className={styles.statLabel}>Horror Games Played</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>1K+</div>
+            <div className={styles.statNumber}>50K+</div>
             <div className={styles.statLabel}>Subscribers</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>Frequent</div>
-            <div className={styles.statLabel}>Uploads</div>
+            <div className={styles.statNumber}>24/7</div>
+            <div className={styles.statLabel}>Nightmare Fuel</div>
           </div>
         </div>
       </div>
