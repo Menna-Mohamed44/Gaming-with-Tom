@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styles from './HeroSection.module.css'
 
 const HeroSection = () => {
@@ -25,12 +24,16 @@ const HeroSection = () => {
               >
                 ▶️ Watch Now
               </a>
-              <Link to="/discord" className={`${styles.button} ${styles.secondaryButton}`}>
+              <a
+                href="#discord"
+                className={`${styles.button} ${styles.secondaryButton}`}
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.querySelector('#discord').scrollIntoView({ behavior: 'smooth' })
+                }}
+              >
                 👥 Join Discord
-              </Link>
-              <Link to="/subscribe" className={`${styles.button} ${styles.outlineButton}`}>
-                🔔 Subscribe
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -39,9 +42,12 @@ const HeroSection = () => {
               <div className={styles.imageGlow}></div>
               <div className={styles.imageBorder}>
                 <img
-                  src="/images/Tom.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tom.jpg-aVKTrXx2Uo2luvODD0K2ZSiqDcrdkD.jpeg"
                   alt="Tom - Gaming with Tom"
                   className={styles.profileImage}
+                  onError={(e) => {
+                    e.target.src = '/placeholder.svg?height=400&width=400'
+                  }}
                 />
               </div>
             </div>
@@ -50,16 +56,16 @@ const HeroSection = () => {
 
         <div className={styles.stats}>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>200+</div>
+            <div className={styles.statNumber}>1000+</div>
             <div className={styles.statLabel}>Horror Games Played</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>1K+</div>
+            <div className={styles.statNumber}>50K+</div>
             <div className={styles.statLabel}>Subscribers</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>Frequent</div>
-            <div className={styles.statLabel}>Uploads</div>
+            <div className={styles.statNumber}>24/7</div>
+            <div className={styles.statLabel}>Nightmare Fuel</div>
           </div>
         </div>
       </div>
